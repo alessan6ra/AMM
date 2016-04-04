@@ -25,8 +25,8 @@ left:0px;
     border-bottom-width:2px;
     border-bottom-style:solid;
     border-bottom-color:black;
-    padding-right:40%;
-    padding-left:40%;
+    padding-right:38%;
+    padding-left:38%;
     padding-top:50px;
     
 }
@@ -43,11 +43,14 @@ left:0px;
     border-style:solid;
     border-width:1px;
     
-    margin-left:3px;
-    margin-right:3px;
+    margin-left:2px;
+    margin-right:2px;
     margin-top: 3px;
     
-    
+    padding-left:2px;
+    padding-right: 2px;
+    paddng-top:2px;
+      
     }
 
  #div2
