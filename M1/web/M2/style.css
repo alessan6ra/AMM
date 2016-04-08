@@ -8,4 +8,9 @@ and open the template in the editor.
     Author     : alessandra
 */
 
-
+body{
+    background-color: #d3b9b6;
+    font-family: "Bedini",serif ;
+    font-size:15px;
+    font-color:#black;
+}
