@@ -9,8 +9,33 @@ and open the template in the editor.
 */
 
 body{
-    background-color: #d3b9b6;
-    font-family: "Bedini",serif ;
-    font-size:15px;
-    font-color:#black;
+    background-color: #ece5a8;
+    font-family: "Droid Sans",Garuda,Sans ;
+    font-style:normal;
+    font-size:16px;
+    color:black;
+    
+}
+
+a:link {
+    color:#7D3C81;
+    text-decoration: underline;     
+}
+  
+a:visited, a:active{
+     color:#89768A;
+     text-decoration: underline; 
+}
+    
+a:hover {color:#E5E1E5;
+     font-weight:bold;
+    
+}
+    
+ 
+    
+h1, h2, h3 {
+    font-family:"Lobster Two",sans-serif;
+    color:#e7453c;
+       font-weight:bold;
 }
