@@ -144,7 +144,8 @@ input[type=submit]
 
 
 .header{
-    height:70px;
-    background-color:black;
-    
+    height:130px;
+    background-color:#e8b6b6;
+        background-img: url("img/prova.pgn");
+    background-position:top-center;
 }
