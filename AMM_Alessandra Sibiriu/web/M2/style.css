@@ -8,3 +8,43 @@ and open the template in the editor.
     Author     : alessandra
 */
 
+
+body{
+    background-image: url("img/8-Triangles.jpg");
+    font-family: "Droid Sans",Garuda,Sans;
+    font-style:normal;
+    font-size:18px;
+    color:black;
+    
+}
+
+header{
+   width:80%;
+   height:130px;
+   background-repeat:no-repeat;
+   background-color:bisque;
+   position:relative;
+   left:140px;
+    
+}
+
+#content{
+    width:70%;
+    height:auto;
+    background-color:bisque;
+    position:relative;
+    left:140px;
+    top:-18px;
+    padding:5%;    
+}
+
+footer{
+    width:80%;
+    height:10%;
+    background-color:bisque;
+    position:relative;
+    left:140px;
+    border:3px;
+    border-color:#eb9d41;
+    border-style:solid;
+}
