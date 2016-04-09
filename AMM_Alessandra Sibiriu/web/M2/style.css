@@ -9,13 +9,25 @@ and open the template in the editor.
 */
 
 body{
-    background-color: #ece5a8;
+    background-image: url("img/sfondo.jpg");
     font-family: "Droid Sans",Garuda,Sans ;
     font-style:normal;
-    font-size:16px;
+    font-size:18px;
     color:black;
     
 }
+
+
+
+.header {
+    height:10px;
+    background-color:black;
+    border:1px ;
+        border-color:white;
+    width:auto;
+    margin:0px auto;
+}
+
 
 a:link {
     color:#7D3C81;
@@ -34,8 +46,105 @@ a:hover {color:#E5E1E5;
     
  
     
-h1, h2, h3 {
-    font-family:"Lobster Two",sans-serif;
+h1 {
+    font-family:"Sawasdee",sans-serif;
     color:#e7453c;
        font-weight:bold;
+}
+
+
+h2, h3 {
+    font-family:"Sawasdee",sans-serif;
+    color:#e7453c;
+       font-weight:bold;
+}
+
+
+
+#form1{
+    background-color:#e8b6b6;
+    width: 300px;
+    color: black;
+    
+    padding:3px;
+    
+    border:3px;
+    border-style:solid;
+    border-color:black;
+    
+    margin:4px;
+    
+}
+
+
+#table{
+    width: 70%;
+
+    
+}
+
+#dispari{
+    
+    background-color:khaki;
+}
+
+#pari{
+    background-color: bisque;
+}
+
+
+
+/*task 5*/
+
+#form2{
+    background-color:#e8b6b6;
+    width: 500px;
+    color: black;
+    
+    padding:8px;
+    
+    border:3px;
+    border-style:solid;
+    border-color:black;
+    
+    margin:10px;
+    
+}
+
+   
+    
+
+
+label {
+ float: none;
+  clear:both;
+    color:green;
+    
+    
+}
+
+input{
+    margin-top:15px;
+   margin-bottom:15px;
+     background-color: white;
+     clear:both;
+    }
+    
+textarea{
+    clear:both;
+    
+    }
+    
+input[type=submit]
+{   margin-top:50px;
+    
+}    
+
+
+
+
+.header{
+    height:70px;
+    background-color:black;
+    
 }
