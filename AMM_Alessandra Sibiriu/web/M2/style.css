@@ -173,12 +173,22 @@ input:focus, textarea:focus{
 
  /*task 6*/
  
- 
- 
+  @media only screen and (max-width:480px) {  
  .sidebar{
      display:none
  }
  
+ .immagine {display:none;}
+ 
+  table{left:0px;}
+  
+ td{padding:3px;}
+ 
+ 
+ #form1{ left:0px;
+ padding-right:10px;}
+ #form2{ left:0px;
+ padding-right: 10px;}
  
  header{
    width:100%;
@@ -211,4 +221,48 @@ footer{
     border-style:solid;
 }
 
+  }
+  
+   .sidebar{
+         display:inline;
+         float:left;
+         width:160px;
+         height:1050px;
+         background-color:#e2dad2;
+         position:relative;
+         left:140px;
+         top:-18px;
+         padding:5px; 
+         }
  
+ header{
+   width:1070px;
+   height:140px;
+   background-image: url("img/header.png");
+   background-repeat:no-repeat;
+   background-color:#e2dad2;
+   position:relative;
+   left:140px;
+}
+
+.content{
+    width:1030px;
+    height:1000px;
+    background-color:#e2dad2;
+    position:relative;
+    left:140px;
+    top:-18px;
+    padding:20px;    
+}
+
+footer{
+    width:80%;
+    height:10%;
+    background-color:#e2dad2;
+    position:relative;
+    left:140px;
+    border:3px;
+    border-color:#eb9d41;
+    border-style:solid;
+}
+
