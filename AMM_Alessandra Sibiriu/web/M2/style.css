@@ -127,6 +127,25 @@ Utilizzate gli stessi stili per i due form.
     left:250px;
 }
 
+#form2{
+    background-color:#e2dad2;
+    width:320px;
+    color:#462724;
+    font-weight:bold;
+    font-family:"Sawasdee",sans-serif;
+    
+    padding-top:3px;
+    padding-bottom:40px;
+    padding-right:40px;
+    padding-left:40px;
+    border:3px;
+    border-style:solid;
+    border-color:#462724;
+    margin:4px;
+    
+    position:relative;
+    left:200px;
+}
 
 .inputtasto{
     margin:14px;
@@ -141,7 +160,10 @@ Utilizzate gli stessi stili per i due form.
     left:50px;
     
 }
-input:focus{
+
+
+
+input:focus, textarea:focus{
    background-color:#e1ccbc;
     border:1px;
     border-color:#462724;
@@ -149,27 +171,31 @@ input:focus{
     outline:none;
 }
 
-
-
-
-header{
-   width:80%;
+ /*task 6*/
+ 
+ 
+ 
+ .sidebar{
+     display:none
+ }
+ 
+ 
+ header{
+   width:100%;
    height:140px;
    background-image: url("img/header.png");
    background-repeat:no-repeat;
    background-color:#e2dad2;
    position:relative;
-   left:140px;
-    
+   left:0px;
 }
 
-
-#content{
-    width:70%;
+.content{
+    width:90%;
     height:auto;
     background-color:#e2dad2;
     position:relative;
-    left:140px;
+    left:0px;
     top:-18px;
     padding:5%;    
 }
@@ -184,3 +210,5 @@ footer{
     border-color:#eb9d41;
     border-style:solid;
 }
+
+ 
