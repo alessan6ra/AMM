@@ -175,7 +175,7 @@ input:focus, textarea:focus{
  
   @media only screen and (max-width:480px) {  
  .sidebar{
-     display:none
+    display:none
  }
  
  .immagine {display:none;}
@@ -222,12 +222,12 @@ footer{
 }
 
   }
-  
+     @media only screen and (min-width:480px) {
    .sidebar{
          display:inline;
          float:left;
          width:160px;
-         height:1050px;
+         height:1000px;
          background-color:#e2dad2;
          position:relative;
          left:140px;
@@ -235,6 +235,9 @@ footer{
          padding:5px; 
          }
  
+         
+
+             
  header{
    width:1070px;
    height:140px;
@@ -256,13 +259,13 @@ footer{
 }
 
 footer{
-    width:80%;
-    height:10%;
+    width:1070px;
+    height:auto;
     background-color:#e2dad2;
     position:relative;
     left:140px;
-    border:3px;
-    border-color:#eb9d41;
-    border-style:solid;
+    border:0px;
+    top:-18px;
 }
 
+         }
