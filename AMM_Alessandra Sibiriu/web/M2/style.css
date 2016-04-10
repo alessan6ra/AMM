@@ -47,7 +47,6 @@ h1 {
        font-weight:bold;
 }
 
-
 h2, h3 {
     font-family:"Sawasdee",sans-serif;
     color:#f06463;
@@ -56,44 +55,101 @@ h2, h3 {
 
 
 /*Task 4
-Tabella
+Tabella cliente.html:
 Utilizzare uno stile diverso per le intestazioni e per i dati
 Utilizzare un colore di sfondo diverso per le righe pari e quelle dispari.
 Dimensionare le righe e le colonne in modo appropriato*/
 
 table{
    position:relative;
-   left:70px;
+   left:40px;
 }
+
 .titolotab{
     
-    color:#462724;
-    font-size:20px;
+    color:#658d8f;
+    font-size:22px;
     font-weight:bold;
     font-family:"Sawasdee",sans-serif;
-    
 }
 
 #dispari{
     background-color:#dddfae;
     color:black;    
-    
-    
 }
+
 #pari{
     background-color:#ddc8bb;
     color:black;
-    
 }
 
 td{
   text-align:center;
+  color:#6b4c49;
   padding-top:30px;
   padding-bottom:30px;
   padding-left: 70px;
-  padding-right:70px;
-  
+  padding-right:70px;  
 }
+
+ /*Task 5
+Rendere il form per la login ed il form per l’inserimento. 
+In particolare:
+Fare in modo che le label ed i campi di input siano allineati.
+Impostare bordi e colori per i campi di input, in particolare per il focus
+Rendere i pulsanti individuabili e gradevoli, posizionandoli al centro dello spazio riservato al form (oppure in altre posizioni a scelta, che siano però gradevoli e coerenti per i due form).
+Utilizzate gli stessi stili per i due form. 
+ */
+
+ 
+ label::after,label::before {
+    content:'\A';
+    white-space: pre;
+}
+
+#form1{
+    background-color:#e2dad2;
+    width:180px;
+    color:#462724;
+    font-weight:bold;
+    font-family:"Sawasdee",sans-serif;
+    
+    padding-top:3px;
+    padding-bottom:40px;
+    padding-right:40px;
+    padding-left:40px;
+    border:3px;
+    border-style:solid;
+    border-color:#462724;
+    margin:4px;
+    
+    position:relative;
+    left:250px;
+}
+
+
+.inputtasto{
+    margin:14px;
+    padding:8px;
+    border:1px;
+    border-color:#462724;
+    border-style:solid;
+    background-color:#b5a1a3;
+    font-family:"Sawasdee",sans-serif;
+    font-weight:bold;
+    position:relative;
+    left:50px;
+    
+}
+input:focus{
+   background-color:#e1ccbc;
+    border:1px;
+    border-color:#462724;
+    border-style:solid;
+    outline:none;
+}
+
+
 
 
 header{
@@ -106,11 +162,6 @@ header{
    left:140px;
     
 }
-label::after,label::before {
-    content:'\A';
-    white-space: pre;
-}
-
 
 
 #content{
