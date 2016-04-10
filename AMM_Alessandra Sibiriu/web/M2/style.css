@@ -9,29 +9,114 @@ and open the template in the editor.
 */
 
 
+/*Task3
+Colore di sfondo
+Colore e font per il testo 
+Proprietà dei titoli (almeno da h1 ad h3)
+Proprietà dei link
+Visualizzazione dei campi di input */
+
 body{
-    background-image: url("img/8-Triangles.jpg");
+    background-image: url("img/sfondo.png");
+    background-color:#e2dad2;
     font-family: "Droid Sans",Garuda,Sans;
     font-style:normal;
     font-size:18px;
     color:black;
+}
+
+a:link {
+    color:#7e9798;
+    font-weight:bold;
+    text-decoration: underline;     
+}
+  
+a:visited, a:active{
+     color:#b5a1a3;
+     font-weight:bold;
+     text-decoration: underline; 
+}
+    
+a:hover {color:#99729b;
+     font-weight:bold;
+}
+
+h1 {
+    font-family:"Sawasdee",sans-serif;
+    color:#f06463;
+       font-weight:bold;
+}
+
+
+h2, h3 {
+    font-family:"Sawasdee",sans-serif;
+    color:#f06463;
+       font-weight:bold;
+}
+
+
+/*Task 4
+Tabella
+Utilizzare uno stile diverso per le intestazioni e per i dati
+Utilizzare un colore di sfondo diverso per le righe pari e quelle dispari.
+Dimensionare le righe e le colonne in modo appropriato*/
+
+table{
+   position:relative;
+   left:70px;
+}
+.titolotab{
+    
+    color:#462724;
+    font-size:20px;
+    font-weight:bold;
+    font-family:"Sawasdee",sans-serif;
     
 }
 
+#dispari{
+    background-color:#dddfae;
+    color:black;    
+    
+    
+}
+#pari{
+    background-color:#ddc8bb;
+    color:black;
+    
+}
+
+td{
+  text-align:center;
+  padding-top:30px;
+  padding-bottom:30px;
+  padding-left: 70px;
+  padding-right:70px;
+  
+}
+
+
 header{
    width:80%;
-   height:130px;
+   height:140px;
+   background-image: url("img/header.png");
    background-repeat:no-repeat;
-   background-color:bisque;
+   background-color:#e2dad2;
    position:relative;
    left:140px;
     
 }
+label::after,label::before {
+    content:'\A';
+    white-space: pre;
+}
+
+
 
 #content{
     width:70%;
     height:auto;
-    background-color:bisque;
+    background-color:#e2dad2;
     position:relative;
     left:140px;
     top:-18px;
@@ -41,7 +126,7 @@ header{
 footer{
     width:80%;
     height:10%;
-    background-color:bisque;
+    background-color:#e2dad2;
     position:relative;
     left:140px;
     border:3px;
