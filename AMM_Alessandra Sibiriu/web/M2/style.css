@@ -122,9 +122,7 @@ Utilizzate gli stessi stili per i due form.
     border-style:solid;
     border-color:#462724;
     margin:4px;
-    
-    position:relative;
-    left:250px;
+   
 }
 
 #form2{
@@ -143,8 +141,6 @@ Utilizzate gli stessi stili per i due form.
     border-color:#462724;
     margin:4px;
     
-    position:relative;
-    left:200px;
 }
 
 .inputtasto{
@@ -156,8 +152,7 @@ Utilizzate gli stessi stili per i due form.
     background-color:#b5a1a3;
     font-family:"Sawasdee",sans-serif;
     font-weight:bold;
-    position:relative;
-    left:50px;
+    
     
 }
 
@@ -197,7 +192,7 @@ input:focus, textarea:focus{
        }
  
  #form2{ left:0px;
-         padding-right: 10px;
+         padding-right: 0px;
        }
  
  header{
@@ -242,7 +237,7 @@ footer{
        z-index: 3;
          float:left;
          width:16%;
-         height:1500px;
+         height:1450px;
          background-color:#e2dad2;
          position:relative;
          left:100px;
@@ -263,7 +258,7 @@ footer{
 .content{
     z-index: 1;
     width:80%;
-    height:1500px;
+    height:1450px;
     background-color:#e2dad2;
     position:relative;
     left:100px;
@@ -271,8 +266,55 @@ footer{
  
 }
 
-table { z-index:2;
+
+#form1{
+    width:20%;
+       
+    padding-top:0%;
+    padding-bottom:0%;
+    padding-right:0%;
+    padding-left:0%;
+    margin-left:35%;
+    margin:0%;
+    
+}
+
+#form2{
+    width:50%;
         
+    padding-top:3px;
+    padding-bottom:2%;
+    padding-right:2%;
+    padding-left:2%;
+    border:3px;
+    border-style:solid;
+    border-color:#462724;
+    margin:2%;
+    
+    margin-left:35%;
+}
+
+
+    
+    
+
+table{
+    position:relative;
+    left:5%;
+    z-index:2;
+    width:20%;
+}
+
+.titolotab{
+    font-size:18px;
+    }  
+
+td{
+  text-align:center;
+  padding-top:2%;
+  padding-bottom:2%;
+  padding-left: 0%;
+  padding-right:0%;  
 }
 
 
@@ -281,8 +323,8 @@ footer{
    height:auto;
     background-color:#e2dad2;
     position:relative;
-    left:140px;
-    top:-18px;
+    left:100px;
+    top:-48px;
     text-align:right;
     font-family:"Sawasdee",sans-serif;
     color:#658d8f;
@@ -301,12 +343,12 @@ footer{
     padding-right:40px;
     padding-left:40px;
     border:3px;
-    margin-left:100px;
+    margin-left:40%;
 }
 
 #form2{
     width:300px;
-    margin-left:150px;
+    margin-left:40%;
 }
 
 .inputtasto{
@@ -317,52 +359,51 @@ footer{
     
          
    .sidebar{
-         display:inline;
          z-index: 3;
          float:left;
-         width:160px;
-         height:1000px;
+         width:16%;
+         height:1450px;
          background-color:#e2dad2;
          position:relative;
-         left:140px;
+         left:100px;
          top:-18px;
-         padding:5px; 
+         padding:2%; 
           }
           
  header{
-   width:1070px;
+   width:80%;
    height:140px;
    background-image: url("img/header.png");
    background-repeat:no-repeat;
    background-color:#e2dad2;
    position:relative;
-   left:140px;
+   left:100px;
 }
 
 .content{
     z-index: 1;
-    width:1030px;
-    height:1000px;
+    width:80%;
+    height:1450px;
     background-color:#e2dad2;
     position:relative;
-    left:140px;
-    top:-18px;
-    padding:20px;    
+    left:100px;
+    top:-28px;
+    padding:0px;
+     
 }
-table
-{
-    z-index:2;
-   position:relative;
-   left:5px;
-}
+table{
+      z-index:2;
+      position:relative;
+      left:3%;
+     }
 footer{
-   width:1070px;
+   width:80%;
    height:auto;
     background-color:#e2dad2;
     position:relative;
-    left:140px;
+    left:100px;
     border:0px;
-    top:-36px;
+    top:-46px;
     text-align:right;
     font-family:"Sawasdee",sans-serif;
     color:#658d8f;
