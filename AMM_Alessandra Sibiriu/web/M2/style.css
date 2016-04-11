@@ -9,12 +9,7 @@ and open the template in the editor.
 */
 
 
-/*Task3
-Colore di sfondo
-Colore e font per il testo 
-Proprietà dei titoli (almeno da h1 ad h3)
-Proprietà dei link
-Visualizzazione dei campi di input */
+/*Task3 */
 
 body{
     background-image: url("img/sfondo.png");
@@ -54,16 +49,8 @@ h2, h3 {
 }
 
 
-/*Task 4
-Tabella cliente.html:
-Utilizzare uno stile diverso per le intestazioni e per i dati
-Utilizzare un colore di sfondo diverso per le righe pari e quelle dispari.
-Dimensionare le righe e le colonne in modo appropriato*/
+/*Task 4*/
 
-table{
-   position:relative;
-   left:40px;
-}
 
 .titolotab{
     
@@ -86,20 +73,10 @@ table{
 td{
   text-align:center;
   color:#6b4c49;
-  padding-top:30px;
-  padding-bottom:30px;
-  padding-left: 70px;
-  padding-right:70px;  
+    
 }
 
- /*Task 5
-Rendere il form per la login ed il form per l’inserimento. 
-In particolare:
-Fare in modo che le label ed i campi di input siano allineati.
-Impostare bordi e colori per i campi di input, in particolare per il focus
-Rendere i pulsanti individuabili e gradevoli, posizionandoli al centro dello spazio riservato al form (oppure in altre posizioni a scelta, che siano però gradevoli e coerenti per i due form).
-Utilizzate gli stessi stili per i due form. 
- */
+ /*Task 5 */
 
  
  label::after,label::before {
@@ -109,25 +86,18 @@ Utilizzate gli stessi stili per i due form.
 
 #form1{
     background-color:#e2dad2;
-    width:180px;
     color:#462724;
     font-weight:bold;
-    font-family:"Sawasdee",sans-serif;
-    
-    padding-top:3px;
-    padding-bottom:40px;
-    padding-right:40px;
-    padding-left:40px;
+    font-family:"Sawasdee",sans-serif; 
     border:3px;
     border-style:solid;
     border-color:#462724;
-    margin:4px;
+    
    
 }
 
 #form2{
     background-color:#e2dad2;
-    width:320px;
     color:#462724;
     font-weight:bold;
     font-family:"Sawasdee",sans-serif;
@@ -139,8 +109,7 @@ Utilizzate gli stessi stili per i due form.
     border:3px;
     border-style:solid;
     border-color:#462724;
-    margin:4px;
-    
+    margin:4px; 
 }
 
 .inputtasto{
@@ -187,18 +156,24 @@ input:focus, textarea:focus{
    }
   
  #form1{
+     width:180px;
      left:0px;
+     padding-top:3px;
+     padding-bottom:40px;
+     padding-left:40px;
      padding-right:10px;
+     margin:4px;
        }
  
- #form2{ left:0px;
-         padding-right: 0px;
+ #form2{ 
+        width:80%;
+        padding-right: 0px;
        }
  
  header{
    width:100%;
    height:140px;
-   background-image: url("img/header.png");
+   background-image: url("img/headermin.png");
    background-repeat:no-repeat;
    background-color:#e2dad2;
    position:relative;
@@ -248,7 +223,7 @@ footer{
  header{
    width:80%;
    height:140px;
-   background-image: url("img/header.png");
+   background-image: url("img/headermin.png");
    background-repeat:no-repeat;
    background-color:#e2dad2;
    position:relative;
@@ -269,7 +244,6 @@ footer{
 
 #form1{
     width:20%;
-       
     padding-top:0%;
     padding-bottom:0%;
     padding-right:0%;
@@ -286,17 +260,10 @@ footer{
     padding-bottom:2%;
     padding-right:2%;
     padding-left:2%;
-    border:3px;
-    border-style:solid;
-    border-color:#462724;
     margin:2%;
-    
     margin-left:35%;
 }
 
-
-    
-    
 
 table{
     position:relative;
@@ -342,20 +309,17 @@ footer{
     padding-bottom:40px;
     padding-right:40px;
     padding-left:40px;
-    border:3px;
     margin-left:40%;
 }
 
 #form2{
     width:300px;
     margin-left:40%;
-}
+      }
 
 .inputtasto{
-    padding:8px;
-    margin-left:10px;
-    
-}  
+    margin-left:10px;    
+           }  
     
          
    .sidebar{
@@ -373,7 +337,7 @@ footer{
  header{
    width:80%;
    height:140px;
-   background-image: url("img/header.png");
+   background-image: url("img/headermax.png");
    background-repeat:no-repeat;
    background-color:#e2dad2;
    position:relative;
@@ -396,6 +360,14 @@ table{
       position:relative;
       left:3%;
      }
+     
+     td { 
+         padding-top:30px;
+         padding-bottom:30px;
+         padding-left: 70px;
+         padding-right:70px;
+     } 
+        
 footer{
    width:80%;
    height:auto;
