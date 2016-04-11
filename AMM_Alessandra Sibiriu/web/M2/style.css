@@ -235,49 +235,53 @@ footer{
 
   }
   
- 
-     @media only screen and (min-width:480px)
+ @media only screen and (min-width:480px)
                         and (max-width:1024px) {
          
-   .sidebar{
-         display:inline;
+   .sidebar{     
+       z-index: 3;
          float:left;
-         width:160px;
-         height:1000px;
+         width:16%;
+         height:1500px;
          background-color:#e2dad2;
          position:relative;
-         left:140px;
+         left:100px;
          top:-18px;
-         padding:5px; 
-         }
+         padding:2%
+            }
           
  header{
-   width:1070px;
+   width:80%;
    height:140px;
    background-image: url("img/header.png");
    background-repeat:no-repeat;
    background-color:#e2dad2;
    position:relative;
-   left:140px;
+   left:100px;
 }
 
 .content{
-    width:1030px;
-    height:1000px;
+    z-index: 1;
+    width:80%;
+    height:1500px;
     background-color:#e2dad2;
     position:relative;
-    left:140px;
-    top:-18px;
-    padding:20px;    
+    left:100px;
+    top:-28px;
+ 
 }
 
+table { z-index:2;
+        
+}
+
+
 footer{
-   width:1070px;
+   width:80%;
    height:auto;
     background-color:#e2dad2;
     position:relative;
     left:140px;
-    border:0px;
     top:-18px;
     text-align:right;
     font-family:"Sawasdee",sans-serif;
