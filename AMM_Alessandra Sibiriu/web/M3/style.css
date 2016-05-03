@@ -1,0 +1,385 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 4-apr-2016, 18.47.56
+    Author     : alessandra
+*/
+
+
+/*Task3 */
+
+body{
+    background-image: url("img/sfondo.png");
+    background-color:#e2dad2;
+    font-family: "Droid Sans",Garuda,Sans;
+    font-style:normal;
+    font-size:18px;
+    color:black;
+}
+
+a:link {
+    color:#7e9798;
+    font-weight:bold;
+    text-decoration: underline;     
+}
+  
+a:visited, a:active{
+     color:#b5a1a3;
+     font-weight:bold;
+     text-decoration: underline; 
+}
+    
+a:hover {color:#99729b;
+     font-weight:bold;
+}
+
+h1 {
+    font-family:"Sawasdee",sans-serif;
+    color:#f06463;
+       font-weight:bold;
+}
+
+h2, h3 {
+    font-family:"Sawasdee",sans-serif;
+    color:#f06463;
+       font-weight:bold;
+}
+
+
+/*Task 4*/
+
+
+.titolotab{
+    
+    color:#658d8f;
+    font-size:22px;
+    font-weight:bold;
+    font-family:"Sawasdee",sans-serif;
+}
+
+#dispari{
+    background-color:#dddfae;
+    color:black;    
+}
+
+#pari{
+    background-color:#ddc8bb;
+    color:black;
+}
+
+td{
+  text-align:center;
+  color:#6b4c49;
+    
+}
+
+ /*Task 5 */
+
+ 
+ label::after,label::before {
+    content:'\A';
+    white-space: pre;
+}
+
+#form1{
+    background-color:#e2dad2;
+    color:#462724;
+    font-weight:bold;
+    font-family:"Sawasdee",sans-serif; 
+    border:3px;
+    border-style:solid;
+    border-color:#462724;
+    
+   
+}
+
+#form2{
+    background-color:#e2dad2;
+    color:#462724;
+    font-weight:bold;
+    font-family:"Sawasdee",sans-serif;
+    
+    padding-top:3px;
+    padding-bottom:40px;
+    padding-right:40px;
+    padding-left:40px;
+    border:3px;
+    border-style:solid;
+    border-color:#462724;
+    margin:4px; 
+}
+
+.inputtasto{
+    margin:14px;
+    padding:8px;
+    border:1px;
+    border-color:#462724;
+    border-style:solid;
+    background-color:#b5a1a3;
+    font-family:"Sawasdee",sans-serif;
+    font-weight:bold;
+    
+    
+}
+
+input:focus, textarea:focus{
+   background-color:#e1ccbc;
+    border:1px;
+    border-color:#462724;
+    border-style:solid;
+    outline:none;
+}
+
+ /*task 6*/
+  /*modifico il css di "base" per renderlo gradevole per max 480 px*/
+  
+ 
+  @media only screen and (max-width:480px) {  
+      
+ .sidebar{
+    display:none
+         }
+ 
+ .immagine {
+     display:none;   
+           }
+ 
+ table{
+     left:0px;
+      }
+  
+ td{
+     padding:3px;
+   }
+  
+ #form1{
+     width:180px;
+     left:0px;
+     padding-top:3px;
+     padding-bottom:40px;
+     padding-left:40px;
+     padding-right:10px;
+     margin:4px;
+       }
+ 
+ #form2{ 
+        width:80%;
+        padding-right: 0px;
+       }
+ 
+ header{
+   width:100%;
+   height:140px;
+   background-image: url("img/headermin.png");
+   background-repeat:no-repeat;
+   background-color:#e2dad2;
+   position:relative;
+   left:0px;
+}
+
+.content{
+    width:90%;
+    height:auto;
+    background-color:#e2dad2;
+    position:relative;
+    left:0px;
+    top:-18px;
+    padding:5%;    
+}
+
+footer{
+    width:100%;
+    height:10%;
+    background-color:#e2dad2;
+    position:relative;
+    top:-36px;
+    border:0px;
+    text-align: right;
+    font-family:"Sawasdee",sans-serif;
+    color:#658d8f;
+    font-weight:bold;
+      }
+
+  }
+  
+ @media only screen and (min-width:480px)
+                        and (max-width:1024px) {
+         
+   .sidebar{     
+       z-index: 3;
+         float:left;
+         width:16%;
+         height:1450px;
+         background-color:#e2dad2;
+         position:relative;
+         left:100px;
+         top:-18px;
+         padding:2%
+            }
+          
+ header{
+   width:80%;
+   height:140px;
+   background-image: url("img/headermin.png");
+   background-repeat:no-repeat;
+   background-color:#e2dad2;
+   position:relative;
+   left:100px;
+}
+
+.content{
+    z-index: 1;
+    width:80%;
+    height:1450px;
+    background-color:#e2dad2;
+    position:relative;
+    left:100px;
+    top:-28px;
+ 
+}
+
+
+#form1{
+    width:20%;
+    padding-top:0%;
+    padding-bottom:0%;
+    padding-right:0%;
+    padding-left:0%;
+    margin-left:35%;
+    margin:0%;
+    
+}
+
+#form2{
+    width:50%;
+        
+    padding-top:3px;
+    padding-bottom:2%;
+    padding-right:2%;
+    padding-left:2%;
+    margin:2%;
+    margin-left:35%;
+}
+
+
+table{
+    position:relative;
+    left:5%;
+    z-index:2;
+    width:20%;
+}
+
+.titolotab{
+    font-size:18px;
+    }  
+
+td{
+  text-align:center;
+  padding-top:2%;
+  padding-bottom:2%;
+  padding-left: 0%;
+  padding-right:0%;  
+}
+
+
+footer{
+   width:80%;
+   height:auto;
+    background-color:#e2dad2;
+    position:relative;
+    left:100px;
+    top:-48px;
+    text-align:right;
+    font-family:"Sawasdee",sans-serif;
+    color:#658d8f;
+    font-weight:bold;
+}
+
+         }
+         
+         
+@media only screen and (min-width:1024px){
+    
+    #form1{
+    width:180px;
+    padding-top:3px;
+    padding-bottom:40px;
+    padding-right:40px;
+    padding-left:40px;
+    margin-left:40%;
+}
+
+#form2{
+    width:300px;
+    margin-left:40%;
+      }
+
+.inputtasto{
+    margin-left:10px;    
+           }  
+    
+         
+   .sidebar{
+         z-index: 3;
+         float:left;
+         width:16%;
+         height:1450px;
+         background-color:#e2dad2;
+         position:relative;
+         left:100px;
+         top:-18px;
+         padding:2%; 
+          }
+          
+ header{
+   width:80%;
+   height:140px;
+   background-image: url("img/headermax.png");
+   background-repeat:no-repeat;
+   background-color:#e2dad2;
+   position:relative;
+   left:100px;
+}
+
+.content{
+    z-index: 1;
+    width:80%;
+    height:1450px;
+    background-color:#e2dad2;
+    position:relative;
+    left:100px;
+    top:-28px;
+    padding:0px;
+     
+}
+table{
+      z-index:2;
+      position:relative;
+      left:3%;
+     }
+     
+     td { 
+         padding-top:30px;
+         padding-bottom:30px;
+         padding-left: 70px;
+         padding-right:70px;
+     } 
+        
+footer{
+   width:80%;
+   height:auto;
+    background-color:#e2dad2;
+    position:relative;
+    left:100px;
+    border:0px;
+    top:-46px;
+    text-align:right;
+    font-family:"Sawasdee",sans-serif;
+    color:#658d8f;
+    font-weight:bold;
+}
+
+         }
