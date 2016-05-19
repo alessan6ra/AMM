@@ -3,16 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Classi;
+package classi;
 
-import java.util.ArrayList;
+
 
 /**
  *
  * @author alessandra
  */
-public class Oggetto_acquistato extends Oggetto_vendita{
-   
-    
-    
+public class Venditore extends Utente{
+      
 }

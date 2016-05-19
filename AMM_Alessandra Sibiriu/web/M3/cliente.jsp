@@ -33,18 +33,7 @@
         
         <p>Clicca sul "Aggiungi" per inserire l'oggetto nel carrello.</p>
         
-        <table>
-                    <c:forEach var="Oggetto_vendita" items="${ListaOggetti_vendita}">
-                        <tr>
-                            <td><h2 class="titolotab">${Oggetto_vendita.nomeogg}</h2>
-                            <img class="immagine" title="${Oggetto_vendita.nomeogg}" alt="${Oggetto_vendita.nomeogg}" src="${Oggetto_vendita.img}" width="130" height="130"></td>
-                            <p>${Oggetto_venduto.quantità}</p>
-                            <p>${Oggetto_venduto.prezzo}</p>
-                            <a href="cliente.html">Aggiungi</a></td>
-                        </tr>
-                    </c:forEach>
-                               
-                </table>
+        <jsp:include page="tabella_articoli.jsp" />
         
                 
         <h2>Mappa del sito</h2>

@@ -29,27 +29,27 @@
         <p>Compila i campi sottostanti e aggiungi l'immagine dell'oggetto da mettere in vendita.
         Ad operazione finita clicca su "Metti in vendita" </p>
         
-        <form  id="form2" method="GET">
+        <form  id="form2" method="POST" name="venditore">
        <div>
 
-       <label for="NomeOggetto">Nome oggetto </label>
-       <input type="text" name="NomeOggetto" id="NomeOggetto"/>
+       <label for="nomeogg">Nome oggetto </label>
+       <input type="text" name="NomeOggetto" id="nomeogg"/>
        
-       <label for="URLimmagine">URL immagine oggetto </label>
-       <input type="url" name="URLimmagine" id="URLimmagine"/>
+       <label for="img">URL immagine oggetto </label>
+       <input type="url" name="URLimmagine" id="img"/>
        
-       <label for="Descrizioneoggetto">Descrizione dell'oggetto </label>
-       <textarea rows='6' cols='20' name="Descrizioneoggetto" id="Descrizioneoggetto">Inserisci una descrizione dell'oggetto</textarea>
+       <label for="descrizione">Descrizione dell'oggetto </label>
+       <textarea rows='6' cols='20' name="Descrizioneoggetto" id="descrizione">Inserisci una descrizione dell'oggetto</textarea>
        
-       <label for="Prezzo">Prezzo </label>
-       <input type="number" min="1" max="100"  name="Prezzo" id="Prezzo"/> euro
+       <label for="prezzo">Prezzo </label>
+       <input type="number" min="1" max="100"  name="Prezzo" id="prezzo"/> euro
        
-       <label for="Numoggetti">Quantità di oggetti disponibili </label>
-       <input type="number" min="1" max="50" name="Numoggetti" id="Numoggetti"/> oggetti 
+       <label for="quantità">Quantità di oggetti disponibili </label>
+       <input type="number" min="1" max="50" name="Numoggetti" id="quantità"/> oggetti 
  
     </div>       
     <input class="inputtasto" type="submit" value="Metti in vendita" />
-    <input class="inputtasto" type="submit" value="Reimposta"/>
+    <input class="inputtasto" type="reset" value="Reimposta"/>
      
    
 </form>

@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Classi;
+package classi;
+
+import java.util.ArrayList;
 
 /**
  *
@@ -11,6 +13,6 @@ package Classi;
  */
 public class Cliente extends Utente{ 
                
-    
+     
 }
 

@@ -4,6 +4,7 @@
     Author     : alessandra
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -30,17 +31,21 @@
       <p>Per accedere al sito, inserisci il tuo username e password negli appositi 
          campi e clicca su login.</p>
       
-      <form id="form2" method="GET">
+      
+      <c:if test="${error!=null}"> <h2> ${error} </h2> </c:if>
+      <c:if test="${error1!=null}"> <h2> ${error1} </h2> </c:if>
+      
+      <form id="form2" name="login" method="POST" action="login">
            
         <div> 
            
-             <label for="Username"> Nome utente </label>
-             <input  type="text" name="Username" id="Username" value="Username"/>
+             <label for="username"> Nome utente </label>
+             <input  type="text" name="username" id="username" value="Username"/>
        
-             <label for="pswd"> Password </label>
-             <input  type="password" name="pswd" id="pswd" value="valoscurato"/>
+             <label for="password"> Password </label>
+             <input  type="password" name="password" id="password" value="valoscurato"/>
              
-             <input class="inputtasto" type="submit" value="Login" />
+             <input class="inputtasto" name="Submit" type="Submit" value="Login" />
        
         </div>
       </form>

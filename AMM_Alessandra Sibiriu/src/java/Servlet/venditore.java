@@ -1,16 +1,15 @@
-package Servlet;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package Servlet;
 
-import Classi.Utente;
-import Classi.UtenteFactory;
-import Classi.Venditore;
+import classi.Factory;
+import classi.Utente;
+import classi.Venditore;
 import java.io.IOException;
-
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -23,8 +22,8 @@ import javax.servlet.http.HttpSession;
  *
  * @author alessandra
  */
-@WebServlet(urlPatterns = {"/Login.html"})
-public class Login extends HttpServlet {
+@WebServlet(name = "venditore", urlPatterns = {"/M3/venditore"})
+public class venditore extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,49 +34,42 @@ public class Login extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         
+        HttpSession session = request.getSession();
         
-       
-        HttpSession session = request.getSession(true);
-         //svolto solo utente  non autenticato
-        if(request.getParameter("Submit") != null)
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+        
+        
+        if (request.getParameter("LoggedIn")!=null) 
         {
-            // Preleva i dati inviati
-            String username = request.getParameter("username");
-            String password = request.getParameter("password");
-            
-            ArrayList<Utente> ListaUtenti = UtenteFactory.getIstanza().getListaUtenti();
-            for(Utente u : ListaUtenti)
-            {
-                if(u.getUsername().equals(username) &&
-                   u.getPassword().equals(password))
-                {
-                    session.setAttribute("loggedIn", true);
-                    
-                    if(u instanceof Venditore) 
-                    {
-                        request.setAttribute("venditore", u);
-                        request.setAttribute("clienti", UtenteFactory.getIstanza().getListaClienti());
-                        request.getRequestDispatcher("venditore_autenticato.jsp").forward(request, response);
-                    }
-                    else
-                    {
-                        request.setAttribute("cliente", u);
-                        request.getRequestDispatcher("cliente_autenticato.jsp").forward(request, response);  
-                    }                    
+             switch ((String)  session.getAttribute("Utente"))   
+             { 
+                case ("cliente"):
+                {   session.setAttribute("utente","cliente");
+                    request.setAttribute("buyer",true);
+                    request.setAttribute("error1" ,"Non è possibile accedere alla pagina in quanto non autorizzato");
+                    request.getRequestDispatcher("login.jsp").forward(request, response);  
+                break;
                 }
-            }
-        }
-        request.getRequestDispatcher("form_login.jsp").forward(request, response);
- 
+                case ("venditore"):
+                    {
+                    request.setAttribute("seller",true);
+                    request.getRequestDispatcher("venditore.jsp").forward(request, response);
+                break;
+                }
+             }
+          
+        }  request.setAttribute("error" ,"Username o password non validi, riprova");
+           request.getRequestDispatcher("/M3/login.jsp").forward(request,response);
+        
+        
+        
+        
     }
-
-    }
-    
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -119,4 +111,3 @@ public class Login extends HttpServlet {
     }// </editor-fold>
 
 }
-
