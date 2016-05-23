@@ -15,6 +15,7 @@ public class Utente {
     protected String cognome;
     protected String username;
     protected String password;
+    protected String tipoUtente;
     protected Saldo saldo;
     
     /* Costruttore */
@@ -23,55 +24,95 @@ public class Utente {
         cognome="";
         username="";
         password="";
+        tipoUtente = "";
+        saldo = new Saldo();     //cosi???? collegato al saldo.java
+        
     }
     
     /*Metodi*/
     
-    public String getNome() {
+    /**
+     * @return the nome
+     */
+     public String getNome() {
         return nome;
     }
 
-    
+    /**
+     * @param nome the nome to set
+     */
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-   
-    public String getCognome() {
+    }   
+    
+    /**
+     * @return the cognome
+     */
+     public String getCognome() {
         return cognome;
     }
 
-   
+     /**
+     * @param cognome the cognome to set
+     */
     public void setCognome(String cognome) {
         this.cognome = cognome;
     }
-
     
+    /**
+     * @return the username
+     */
     public String getUsername() {
         return username;
     }
 
-    
+    /**
+     * @param username the username to set
+     */
     public void setUsername(String username) {
         this.username = username;
     }
 
-    
+    /**
+     * @return the password
+     */
     public String getPassword() {
         return password;
     }
 
     
+    /**
+     * @param password the password to set
+     */
     public void setPassword(String password) {
         this.password = password;
     }
     
+    /**
+     * @return the tipoUtente
+     */
+    public String getTipoUtente(){
+        return tipoUtente;
+    }
+    
+    /**
+     * @param tipoUtente the tipoUtente to set
+     */
+    public void setTipoUtente(String tipoUtente) {   //pensare se serve o no
+        this.tipoUtente = tipoUtente;
+    }
+   
+    /**
+     * @return the saldo
+     */
     public Saldo getSaldo() {
         return saldo;
     }
     
+     /**
+     * @param saldo the saldo to set
+     */
     public void setSaldo(Saldo saldo) {
         this.saldo = saldo;
     }
-    
 }

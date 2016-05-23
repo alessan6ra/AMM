@@ -13,14 +13,13 @@ public class Saldo {
      
     private int saldo; 
    
-    /*Costruttore*/
     
+    /*Costruttore*/
     public Saldo () { 
       saldo=0;
     }
     
     /*Metodi*/
-    
     public boolean Pagamento(int prezzo){
         if(prezzo <= this.saldo)
             return true;
@@ -28,10 +27,16 @@ public class Saldo {
             return false;
     }
     
+     /**
+     * @return the saldo
+     */
     public int getSaldo() {
         return saldo;
     }
     
+     /**
+     * @param saldo the saldo to set
+     */
     public void setSaldo(int saldo) {
         this.saldo = saldo;
     }

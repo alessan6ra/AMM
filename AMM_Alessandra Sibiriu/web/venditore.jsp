@@ -29,6 +29,7 @@
         <p>Compila i campi sottostanti e aggiungi l'immagine dell'oggetto da mettere in vendita.
         Ad operazione finita clicca su "Metti in vendita" </p>
         
+        
         <form  id="form2" method="POST" name="venditore">
        <div>
 

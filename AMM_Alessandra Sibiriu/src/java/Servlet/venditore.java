@@ -5,24 +5,17 @@
  */
 package Servlet;
 
-import classi.Factory;
-import classi.Utente;
-import classi.Venditore;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author alessandra
  */
-@WebServlet(name = "venditore", urlPatterns = {"/M3/venditore"})
 public class venditore extends HttpServlet {
 
     /**
@@ -37,38 +30,18 @@ public class venditore extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        
-        HttpSession session = request.getSession();
-        
-        String username = request.getParameter("username");
-        String password = request.getParameter("password");
-        
-        
-        if (request.getParameter("LoggedIn")!=null) 
-        {
-             switch ((String)  session.getAttribute("Utente"))   
-             { 
-                case ("cliente"):
-                {   session.setAttribute("utente","cliente");
-                    request.setAttribute("buyer",true);
-                    request.setAttribute("error1" ,"Non è possibile accedere alla pagina in quanto non autorizzato");
-                    request.getRequestDispatcher("login.jsp").forward(request, response);  
-                break;
-                }
-                case ("venditore"):
-                    {
-                    request.setAttribute("seller",true);
-                    request.getRequestDispatcher("venditore.jsp").forward(request, response);
-                break;
-                }
-             }
-          
-        }  request.setAttribute("error" ,"Username o password non validi, riprova");
-           request.getRequestDispatcher("/M3/login.jsp").forward(request,response);
-        
-        
-        
-        
+        try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet venditore</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet venditore at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

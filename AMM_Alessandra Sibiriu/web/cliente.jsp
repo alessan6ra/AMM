@@ -33,9 +33,9 @@
         
         <p>Clicca sul "Aggiungi" per inserire l'oggetto nel carrello.</p>
         
-        <jsp:include page="tabella_articoli.jsp" />
+     
+          <jsp:include page="tabella_oggetti.jsp" />
         
-                
         <h2>Mappa del sito</h2>
    <ul>
    <li> <a href='descrizione.html'> Home Page </a> </li>

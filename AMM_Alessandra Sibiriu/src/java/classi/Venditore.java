@@ -12,5 +12,11 @@ package classi;
  * @author alessandra
  */
 public class Venditore extends Utente{
+    
+    /* Costruttore */
+    public Venditore()
+    {
+        super();
+    }
       
 }

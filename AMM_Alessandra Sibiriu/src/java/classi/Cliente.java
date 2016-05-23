@@ -5,14 +5,16 @@
  */
 package classi;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author alessandra
  */
 public class Cliente extends Utente{ 
                
-     
+ /* Costruttore */
+    public Cliente()
+    {
+        super();
+    }    
 }
 

@@ -55,7 +55,7 @@ h2, h3 {
 .titolotab{
     
     color:#658d8f;
-    font-size:22px;
+    font-size:15px;
     font-weight:bold;
     font-family:"Sawasdee",sans-serif;
 }
@@ -71,6 +71,7 @@ h2, h3 {
 }
 
 td{
+  font-size:15px;
   text-align:center;
   color:#6b4c49;
     
@@ -152,7 +153,7 @@ input:focus, textarea:focus{
       }
   
  td{
-     padding:3px;
+     padding:0px;
    }
   
  #form1{
@@ -273,17 +274,22 @@ table{
 }
 
 .titolotab{
-    font-size:18px;
+    font-size:15px;
     }  
 
 td{
   text-align:center;
-  padding-top:2%;
-  padding-bottom:2%;
+  font-size:15px;
+  padding-top:1%;
+  padding-bottom:1%;
   padding-left: 0%;
   padding-right:0%;  
 }
 
+.immagine{
+         width:80px;
+         height:80px;
+     }       
 
 footer{
    width:80%;
@@ -358,16 +364,20 @@ footer{
 table{
       z-index:2;
       position:relative;
-      left:3%;
+      left:6%;
      }
      
      td { 
-         padding-top:30px;
-         padding-bottom:30px;
-         padding-left: 70px;
-         padding-right:70px;
+         padding-top:7px;
+         padding-bottom:7px;
+         padding-left: 7px;
+         padding-right:7px;
      } 
-        
+     .immagine{
+         width:130px;
+         height:130px;
+     }       
+     
 footer{
    width:80%;
    height:auto;
