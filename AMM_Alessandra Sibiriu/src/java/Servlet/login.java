@@ -21,7 +21,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author alessandra
  */
-@WebServlet(name = "login", urlPatterns = {"/M3/login"})
+@WebServlet( name ="login", urlPatterns = {"/login"})
 public class login extends HttpServlet {
 
     /**
@@ -40,7 +40,7 @@ public class login extends HttpServlet {
         //inizializzazione sessione
         HttpSession session = request.getSession(true);
         
-        if (request.getParameter("Submit") != null) {
+        if (request.getParameter("Submit") != null) {    //se il tasto è stato cliccato
             String username = request.getParameter("username");
             String password = request.getParameter("password");
 
@@ -51,42 +51,43 @@ public class login extends HttpServlet {
                     
                     //attributi sessione
                     session.setAttribute("loggedId", true);
-                    session.setAttribute("Username", u.getUsername());
+                    session.setAttribute("username", u.getUsername());
+                    session.setAttribute("tipoUtente", u.getTipoUtente());
                                         
                     if (u instanceof Venditore) {
-                        session.setAttribute("venditore", u);                       
-                        request.getRequestDispatcher("/M3/Venditore.html").forward(request, response);
+                        session.setAttribute("Venditore", u);
+                        request.getRequestDispatcher("/venditore.jsp").forward(request, response);
                     }
                     else{
-                        session.setAttribute("cliente", u);
-                        request.getRequestDispatcher("/M3/Cliente.html").forward(request, response);
+                        session.setAttribute("Cliente", u);
+                        request.getRequestDispatcher("/cliente.jsp").forward(request, response);
                     }
-                }request.setAttribute("error" ,"Username o password non validi, riprova");
-                 request.getRequestDispatcher("/M3/login.jsp").forward(request,response); 
+                } else request.setAttribute("error" ,"Username o password non validi, riprova");
+                 request.getRequestDispatcher("/login.jsp").forward(request, response); 
             }
-        } else if (request.getParameter("Submit") == null) 
+            
+        } else if (request.getParameter("Submit") == null)  //se il tasto non è stato cliccato
          { 
             
-             if (request.getParameter("LoggedIn")!=null) 
+             if (request.getParameter("LoggedIn")!=null)  //se sono loggata
              {
-                 switch ((String)  session.getAttribute("Utente"))   
+                 switch ((String)request.getAttribute("Utente"))   
                  { 
-                    case ("cliente"):
+                    case ("Cliente"):
                     {
-                    request.setAttribute("ListaOggetti","ListaOggetti" );
                     request.setAttribute("buyer",true);
-                    request.getRequestDispatcher("/M3/cliente.jsp").forward(request,response);
+                    request.getRequestDispatcher("/cliente.jsp").forward(request,response);
              break;
                     }
-                    case ("venditore"):
+                    case ("Venditore"):
                     {
                     request.setAttribute("seller",true);
-                    request.getRequestDispatcher("/M3/venditore.jsp").forward(request, response);
+                    request.getRequestDispatcher("/venditore.jsp").forward(request,response);
              break;
                     }
                 }
           
-        } request.getRequestDispatcher("/M3/login.jsp").forward(request,response);
+        } request.getRequestDispatcher("/login.jsp").forward(request,response);
                 
     }
     }
