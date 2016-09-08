@@ -1,0 +1,11 @@
+***ENTITA'***
+
+Cliente:   id(Primary Key), username, password, saldo;
+Venditore: id(Primary Key), username, password, saldo;
+Oggetto:   id(Primary Key), nome, descrizione, url, pezzi, prezzo, idVend(Foreign Key);
+
+
+***RELAZIONI***
+
+Venditore(1)-> VENDE ->Oggetto(N)
+

@@ -1,0 +1,531 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29-ago-2016, 15.19.58
+    Author     : Alessandra
+*/
+
+/*TASK 3*/
+
+body  /*modifico sfondo e font delle pagine generiche*/
+{   background-image: url("img/sfondo.png");
+    background-color: gainsboro; /*dopo posso anche cambiarlo*/
+    color: black;
+    font-size: 16px;
+    font-style: normal;
+    font-family: Geneva, Tahoma, Verdana, sans-serif;
+    text-align: left;
+}
+
+
+
+h1   /*personalizzo il livello h1*/
+{
+    font-family: "Lucida Bright", Georgia, serif;
+    color:#f06463;
+    font-weight:bold;
+    text-align: center;
+}
+
+h2, h3  /*personalizzo i livelli h2 e h3 */
+{
+    font-family:  "Lucida Bright", Georgia, serif;
+    color:#f06463;
+    font-weight:bold;
+}
+
+a:link /*personalizzo link prima di averci cliccato*/
+{
+    color:#7e9798;
+    font-weight:bold;
+    text-decoration: underline;     
+}
+  
+a:visited, a:active /*personalizzo link dopo averci cliccato e mentre si tiene premouto mouse sul link*/
+{
+     color:#b5a1a3;
+     font-weight:bold;
+     text-decoration: underline; 
+}
+    
+a:hover /*personalizzo link passaggio mouse sopra*/
+{
+     color:#99729b;
+     font-weight:bold;
+}
+
+
+
+/* TASK 4 pagina CLIENTE */
+
+table /*faccio combaciare i bordi della tabella*/
+{ 
+       border-collapse: collapse;
+}
+
+
+td /*bordi tabella + stile celle*/
+{
+    border: solid;
+    border-color:#658d8f;
+    border-collapse: collapse;
+    border-width: 1px;
+    padding:0px;
+    
+    font-family: Geneva, Tahoma, Verdana, sans-serif;
+    text-align: center;
+}
+
+th /*bordi tabella + stile intestazioni */
+{
+    border: solid;
+    border-color:#658d8f;
+    border-collapse: collapse;
+    border-width: 1px;
+ 
+    
+    font-family: "Lucida Bright", Georgia, serif;
+    color:#658d8f;
+ 
+    font-weight:bold;
+    text-align: center;
+}
+
+
+.dispari /*cambio colore righe dispari*/
+{
+    background-color:#ededd1;
+    color:black;    
+}
+
+.pari /*cambio colore righe pari*/
+{
+    background-color:#e8dbd4;
+    color:black;
+}
+
+/*TASK 5 pagine LOGIN e VENDITORE*/
+
+form /*modifico bordi sfondo form e font all'interno'*/
+{
+    border-width: 3px;
+    border: solid;
+    border-color:#658d8f;
+    background-color: #e2dad2;
+    
+}
+
+form label /*Mandare a capo le intestazioni dei campi del form + personalizzazione */
+{
+    display: block;
+    color:#658d8f;
+    font-weight: bold;
+}
+
+.padding /*per non rendere tutto attaccato*/
+{
+padding:15px;    
+}
+
+
+
+.submit /*tasto aggiungi oggetto e reset*/
+{
+    padding:5px;
+    border:2px;
+    border-color:#658d8f;
+    border-style:solid;
+    color:#658d8f;
+    background-color: #ededd1;
+    font-weight:bold;
+    
+}
+
+.submitlog /*tasto login */
+{
+    margin-left:50px;
+    padding:5px;
+    border:2px;
+    border-color:#658d8f;
+    border-style:solid;
+    color:#658d8f;
+    background-color:#ededd1;
+    font-weight:bold;
+    
+}
+
+:focus 
+{
+   background-color:#e1ccbc;
+    border:1px;
+    border-color:#658d8f;;
+    border-style:solid;
+    outline:none;
+}
+
+.messaggio
+
+{   font-weight:bold;
+    font-size: 18px;
+    color:#99729b;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+/*TASK 6*/
+
+@media only screen and (min-width: 1024px)
+{
+ .corpo
+ {
+     margin-right:12%;
+     margin-left:12%;
+     min-height: 1160px;
+     padding:10px;
+     background-color:#e2dad2;
+     border-left:5px;
+     border-right:5px;
+     border-top:0px;
+     border-bottom:0px;
+     border-color:#658d8f;
+     border-style:solid;    
+ }
+ .sidebar
+ {
+     margin-left:12%;
+     min-height: 1060px;
+     
+     border-left:5px;
+     border-right:0px;
+     border-top:0px;
+     border-bottom:0px;
+     border-color:#658d8f;
+     border-style:solid;
+     
+     padding-top:10px;
+     padding-left:5px;
+     padding-right:10px;
+     padding-bottom:0px;
+     width: 15%;
+     float:left;
+     background-color:#e2dad2;
+    border-collapse: collapse;
+     
+ }
+ 
+ header
+ {
+   background-color:#ededd1;
+   color:#f06463;
+   font-family: "Lucida Bright", Georgia, serif;
+   font-size:40px;
+   font-weight:bold;
+   text-align: center;
+   text-decoration: underline;
+   
+   border-left:5px;
+   border-right:5px;
+     border-top:5px;
+     border-bottom:5px;
+   border-color:#658d8f;
+   border-style:solid;
+   margin-top:-7px;
+   margin-left:12%;
+       margin-right:12%;
+    
+   
+ }
+ 
+  footer
+ {
+    height:20px;
+    margin-right:12%;
+     margin-left:12%;
+    color:#f06463;
+   font-family: Geneva, Tahoma, Verdana, sans-serif;
+   background-color:#e2dad2;
+   padding-bottom:10px;
+   
+   border-left:5px;
+     border-right:5px;
+     border-top:0px;
+     border-bottom:5px;
+   border-color:#658d8f;
+   border-style:solid;
+   margin-top:-50px;
+   text-align: right;
+ }
+ 
+ form
+    {   
+    margin-left:42%;
+    margin-right:24%;
+    padding-left: 8%;
+    padding-right:1%;
+        padding-top:1%;
+        padding-bottom:1%;
+}
+
+table
+{
+    margin-left:30%
+}
+
+table img
+{
+     width: 130px;
+     height: 130px;
+      
+}
+td /*bordi tabella + stile celle*/
+{
+       font-size:16px;
+  
+}
+
+th /*bordi tabella + stile intestazioni */
+{
+        padding:4px;
+   
+    font-size:22px;
+  
+}
+
+
+
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 1024px)
+ {
+     
+     
+     .corpo
+ {
+     margin-right:12%;
+     margin-left:12%;
+     min-height: 1550px;
+     padding:10px;
+     background-color:#e2dad2;
+     border-left:0px;
+     border-right:5px;
+     border-top:0px;
+     border-bottom:0px;
+     border-color:#658d8f;
+     border-style:solid;    
+ }
+ .sidebar
+ {
+     margin-left:12%;
+     min-height: 1550px;
+     
+     border-left:5px;
+     border-right:0px;
+     border-top:0px;
+     border-bottom:0px;
+     border-color:#658d8f;
+     border-style:solid;
+     
+     padding-top:10px;
+     padding-left:5px;
+     padding-right:10px;
+     padding-bottom:0px;
+     width: 15%;
+     float:left;
+     background-color:#e2dad2;
+    border-collapse: collapse;
+     
+ }
+ 
+ header
+ {
+   background-color:#ededd1;
+   color:#f06463;
+   font-family: "Lucida Bright", Georgia, serif;
+   font-size:40px;
+   font-weight:bold;
+   text-align: center;
+   text-decoration: underline;
+   
+   border-left:5px;
+   border-right:5px;
+     border-top:5px;
+     border-bottom:5px;
+   border-color:#658d8f;
+   border-style:solid;
+   margin-top:-7px;
+   margin-left:12%;
+       margin-right:12%;
+    
+   
+ }
+ 
+  footer
+ {
+    height:20px;
+    margin-right:12%;
+     margin-left:12%;
+    color:#f06463;
+   font-family: Geneva, Tahoma, Verdana, sans-serif;
+   background-color:#e2dad2;
+   padding-bottom:10px;
+   
+   border-left:5px;
+     border-right:5px;
+     border-top:0px;
+     border-bottom:5px;
+   border-color:#658d8f;
+   border-style:solid;
+   margin-top:-50px;
+   text-align: right;
+ }
+ 
+ form
+    {   text-align: center;
+    margin-left:25%;
+    margin-right:5%;
+    padding-left: 1%;
+    padding-right:1%;
+        padding-top:1%;
+        padding-bottom:1%;
+}
+
+table
+{
+    margin-left:15%;
+}
+
+table img
+{ width: 40%;
+       min-width: 20px;
+     min-height: 20px;
+      
+}
+td /*bordi tabella + stile celle*/
+{
+       font-size:12px;
+  
+}
+
+th /*bordi tabella + stile intestazioni */
+{
+        padding:2px;
+   
+    font-size:12px;
+  
+}
+     
+     
+     
+     
+ }
+
+
+
+
+
+
+@media only screen and (max-width: 480px)
+{
+.sidebar
+ {
+     display:none;
+ }
+ 
+  .corpo
+ {
+     width:97%;
+     min-height: 500px;
+     padding:5px;
+     background-color:#e2dad2;
+     border-left:2px;
+     border-right:2px;
+     border-bottom:0px;
+     border-top:2px;
+     border-color:#658d8f;
+     border-style:solid;  
+    margin-top:-20px;
+ }
+  
+ header
+ {
+     border-collapse: collapse;
+   width:97%;
+   background-color:#ededd1;
+   color:#f06463;
+   font-family: "Lucida Bright", Georgia, serif;
+   font-size:30px;
+   font-weight:bold;
+   text-align: center;
+   text-decoration: underline;
+   padding:5px;
+   border:2px;
+   border-color:#658d8f;
+   border-style:solid;
+   margin-top:-7px;
+ }
+ 
+  footer
+ {
+     width:97%;
+    height:30px;
+   color:#f06463;
+   font-family: Geneva, Tahoma, Verdana, sans-serif;
+   background-color:#e2dad2;
+  
+   padding:5px;
+   border-left:2px;
+     border-right:2px;
+     border-top:0px;
+     border-bottom:2px;
+   border-color:#658d8f;
+   border-style:solid;
+   margin-top:0px;
+   text-align: right;
+ }
+ 
+ form
+    {   text-align: center;
+    margin-left:10%;
+    margin-right:10%;
+    width:80%;
+    padding-left:0%;
+    
+    padding-right:0%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    
+    }
+
+table
+{
+    margin-left:2%
+}
+
+table img
+{
+     width: 30px;
+     height: 30px;
+      
+}
+ td /*bordi tabella + stile celle*/
+{
+       font-size:14px;
+  
+}
+
+th /*bordi tabella + stile intestazioni */
+{
+    
+    padding:2px;
+   
+    font-size:12px;
+    
+}
+ 
+ 
+}
